@@ -1,0 +1,50 @@
+
+nav{
+    display: flex;
+       color: blueviolet; 
+}
+.scorelink{
+    flex-basis: 50%;
+}
+.timer{
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.pageContent{
+    
+    text-align: center;
+    
+}
+.pageOneTitle{ 
+    
+    font-size: 2rem;    
+}
+
+.button {
+    background-color: blueviolet;
+    border-color: blueviolet;
+    font: bold;
+    color: white;
+}
+.pageContainer{
+   display: inline-block;
+   max-width: 600px;
+   min-width: 320px;
+    
+}
+.choices{
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+    max-width: 600px;
+}
+.choiceButton{
+    margin-bottom: 10px;
+    
+}
+.scoreListContainer{
+    background-color: rgb(223, 200, 238);
+    text-align: left;
+    
+}
