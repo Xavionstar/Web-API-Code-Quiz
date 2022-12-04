@@ -9,12 +9,12 @@
     </head>
     <body>
         <nav>
-            <a class="scorelink">View Highscores</a>
+            <a class="scorelink" href="#" id="highScoreLink">View Highscores</a>
             <!-- maybe change this from section -->
             <section class="timer">Time: 0</section>
         </nav>
 
-        <section class="pageContent">
+        <section class="pageContent" id="pageOne">
             <div class="pageContainer">
                 <h1 class="pageOneTitle">Coding Quiz Challenge</h1>
                 <p>Try to answer the following code-related
@@ -22,37 +22,37 @@
                     time limit. Keep in mind that incorrect answers will
                     penalize your score/time by 15 seconds!
                 </p>
-                <button class="button">Start Quiz</button>
+                <button class="button" id="startQuizButton">Start Quiz</button>
             </div>
         </section>
-        <section class=" pageContent">
+        <section class=" pageContent hide" id="pageTwo">
             <div class="pageContainer">
                 <h1> Commonly used data types DO NOT include:</h1>
                 <ul class="choices">
-                    <li><button class="choiceButton button">1. strings</button></li>
-                    <li><button class="choiceButton button">2. booleans</button></li>
-                    <li><button class="choiceButton button">3. alerts</button></li>
-                    <li><button class="choiceButton button">4. numbers</button></li>
+                    <li><button class="choiceButton button wrongAnswer">1. strings</button></li>
+                    <li><button class="choiceButton button wrongAnswer">2. booleans</button></li>
+                    <li><button class="choiceButton button" id="pageTwoAnswer">3. alerts</button></li>
+                    <li><button class="choiceButton button wrongAnswer">4. numbers</button></li>
                 </ul>
             </div>
         </section>
-        <section class=" pageContent">
+        <section class=" pageContent hide" id="pageThree">
             <div class="pageContainer">
                 <h1>What is the correct syntax to represent a string in
                     Javascript?</h1>
                 <ul class="choices">
-                    <li><button class="choiceButton button">1. "string"
+                    <li><button class="choiceButton button" id="pageThreeAnswer">1. "string"
                         </button></li>
-                    <li><button class="choiceButton button">2. [string]
+                    <li><button class="choiceButton button wrongAnswer">2. [string]
                         </button></li>
-                    <li><button class="choiceButton button">3. (string)
+                    <li><button class="choiceButton button wrongAnswer">3. (string)
                         </button></li>
-                    <li><button class="choiceButton button">4. @string@
+                    <li><button class="choiceButton button wrongAnswer">4. @string@
                         </button></li>
                 </ul>
             </div>
         </section>
-        <section class="pageContent">
+        <section class="pageContent hide" id="finalScorePage">
             <div class="pageContainer">
                 <h1>All Done!</h1>
                 <p>Your final score is: <span> </span></p>
@@ -60,12 +60,12 @@
                     <input type="text">
                 </label>
 
-                <button class="button">Submit</button>
+                <button class="button" id="submitButton">Submit</button>
 
 
             </div>
         </section>
-        <section class="pageContent">
+        <section class="pageContent hide" id="highScorePage">
             <div class="pageContainer">
                 <h1>Highscores</h1>
                 <div class="scoreListContainer">
@@ -77,7 +77,7 @@
                         <li>Bas- 15</li>
                     </ol>
                 </div>
-                <button class="button">Go Back</button>
+                <button class="button" id="goBack">Go Back</button>
                 <button class="button" id="clearHighScores">Clear High Scores</button>
             </div>
         </section>

@@ -1,24 +1,28 @@
-
-nav{
+nav {
     display: flex;
-       color: blueviolet; 
+    color: blueviolet;
 }
+
 .scorelink{
     flex-basis: 50%;
+    text-decoration: none;
+    color: blueviolet;
 }
-.timer{
+
+.timer {
     flex-basis: 50%;
     text-align: right;
 }
 
-.pageContent{
-    
+.pageContent {
+
     text-align: center;
-    
+
 }
-.pageOneTitle{ 
-    
-    font-size: 2rem;    
+
+.pageOneTitle {
+
+    font-size: 2rem;
 }
 
 .button {
@@ -27,24 +31,34 @@ nav{
     font: bold;
     color: white;
 }
-.pageContainer{
-   display: inline-block;
-   max-width: 600px;
-   min-width: 320px;
-    
+
+.pageContainer {
+    display: inline-block;
+    width: 500px;
+
 }
-.choices{
+
+.choices {
     padding-left: 0;
     list-style: none;
     text-align: left;
     max-width: 600px;
 }
-.choiceButton{
+
+.choiceButton {
     margin-bottom: 10px;
-    
+
 }
-.scoreListContainer{
+
+.scoreListContainer {
     background-color: rgb(223, 200, 238);
     text-align: left;
+
+}
+.hide{
+    display:none;
+}
+
+.highScoreButton{
     
 }
