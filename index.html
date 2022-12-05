@@ -10,8 +10,8 @@
     <body>
         <nav>
             <a class="scorelink" href="#" id="highScoreLink">View Highscores</a>
-            <!-- maybe change this from section -->
-            <section class="timer">Time: 0</section>
+            
+            <section class="timer">Time: <span id="timer"></span></section>
         </nav>
 
         <section class="pageContent" id="pageOne">
@@ -71,9 +71,9 @@
             <section class="pageContent hide" id="finalScorePage">
                 <div class="pageContainer">
                     <h1>All Done!</h1>
-                    <p>Your final score is: <span> </span></p>
+                    <p>Your final score is: <span id="finalScore"></span></p>
                     <label>Enter initials:
-                        <input type="text">
+                        <input type="text" id="initials">
                     </label>
 
                     <button class="button" id="submitButton">Submit</button>
@@ -83,12 +83,8 @@
                 <div class="pageContainer">
                     <h1>Highscores</h1>
                     <div class="scoreListContainer">
-                        <ol>
-                            <li>lwp- 6</li>
-                            <li>reb- 8</li>
-                            <li>lmc- 10</li>
-                            <li>scs- 11</li>
-                            <li>Bas- 15</li>
+                        <ol id="highScoreDisplay">
+
                         </ol>
                     </div>
                     <button class="button" id="goBack">Go Back</button>
